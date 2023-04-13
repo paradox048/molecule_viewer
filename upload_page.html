@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title> Uploading_svg </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="upload_page.js" /></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <div class = "wrapper">
+        <nav class = "nav_bar">
+          <li><a href="./index.html">Add/Remove</a></li>
+          <li><a href="./upload_page.html">Upload</a></li>
+          <li><a href="./list_mol.html">Display</a></li>
+          <li><a href="./home_page.html">Home</a></li>
+        </nav>
+        <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><center>File Upload</center></h1>
+        <form id="upload-form" action="/upload_form.html" enctype="multipart/form-data" method="post">
+          <center>
+            <p>
+              <label for="mol-name">File Name</label>
+              <input type="text" id="mol-name" name="mol-name" placeholder="Enter file name" class="input-field">
+            </p>
+            <p>
+              <label for="sdf-file">Select file to upload</label>
+              <input type="file" id="sdf-file" name="sdf-file" class="file-input">
+            </p>
+            <p>
+              <button class="upload-button" id = "submit_sdf">Upload Molecule</button>
+            </p>
+            <div id="progress-container">
+              <div id="progress-bar"></div>
+              <div id="progress-status"></div>
+            </div>
+          </center>
+        </form> 
+      </div>
+    </center>
+  </body>
+</html>
+

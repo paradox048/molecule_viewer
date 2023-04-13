@@ -1,0 +1,82 @@
+<!-- <html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="script.js" /></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  </head>
+  <body>
+    <label id="label">Enter name:</label>
+    <input type="text" id="name"/>
+    <button id="button"> Click me </button>
+  </body>
+</html> -->
+
+<html>
+  <head>
+    <title> Adding/Removing </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="script.js" /></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <center><div class = "wrapper">
+      <nav class="nav_bar">
+        <li><a href="./index.html">Add/Remove</a></li>
+        <li><a href="./upload_page.html">Upload</a></li>
+        <li><a href="./list_mol.html">Display</a></li>
+        <li><a href="./home_page.html">Home</a></li>
+      </nav>
+      <center><h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Add/Remove Elements </h1></center>
+    
+      <center><p class = "btn" > Remove Element </btn></button>
+              <label class="switch" id = "toggle_add_remove" value = false>
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+      </center>
+      <div><center>
+        <form action="/form_handler.html" enctype="multipart/form-data" method="post"></form>
+        <div id = add_e_div >
+            <p>
+              <label class = "label_col" for="element_num">Add Element Number:</label>
+              <input class = "input_boxes" type="number" id="element_num" name="element_num" min="1" max="118" step="1" style="width: 300px;"/>
+            </p>
+            <p>
+                <label class = "label_col" for="element_code">Add Element Code:</label>
+                <input class = "input_boxes" type="text" id="element_code" name="element_code" style="width: 300px;"/>
+            </p>
+            <p >
+              <label class = "label_col" for="element_name">Add Element Name:</label>
+              <input class = "input_boxes" type="text" id="element_name" name="element_name" style="width: 300px;"/>
+            </p>
+            <p >
+              <label class = "label_col" for="c_1">Add Element Colour 1:</label>
+              <input class = "colour_box" type="color" id="c_1" name="c_1" style="width: 300px;"/>
+            </p>
+            <p >
+              <label class = "label_col" for="c_2">Add Element Colour 2:</label>
+              <input  class = "colour_box" type="color" id="c_2" name="c_2" style="width: 300px;"/>
+            </p>
+            <p >
+              <label class = "label_col" for="c_3">Add Element Colour 3:</label>
+              <input  class = "colour_box" type="color" id="c_3" name="c_3" style="width: 300px;"/>
+            </p>
+            <p>
+              <label class = "label_col" for="e_rad">Add Element Radius:</label>
+              <input class = "input_boxes" type="text" id="e_rad" name="e_rad" style="width: 300px;"/>
+            </p>
+            <center><button id = "add_element" class= "upload-button" > Add element</button ></center>
+        </div>
+        <center>
+          <div id = remove_e_div style = "display: none;">
+            <div style="text-align: center;">
+              <ul class = fancy-list id="myList"></ul>
+            </div>
+          </div>
+        </center>
+        </form> 
+    </div></center>
+  </div></center>
+  </body>
+</html>
